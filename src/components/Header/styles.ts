@@ -2,9 +2,9 @@ import { SystemStyleObject } from "@chakra-ui/react";
 
 export const style: Record<string, SystemStyleObject> = {
   boxHeader: {
-    w: { lg: "250px" },
+    w: { lg: "300px" },
     p: { lg: "1rem" },
-    borderRight: "1px dashed #c3c3c3",
+    borderRight: "1px solid #c3c3c3",
     position: "relative",
     backgroundColor: "var(--chakra-colors-chakra-body-bg)",
   },

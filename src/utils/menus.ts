@@ -1,3 +1,4 @@
+import { IconType } from "react-icons/lib";
 import {
   RiHome8Fill,
   RiBookReadFill,
@@ -22,14 +23,14 @@ export const menus: IMenu[] = [
     label: "Cursos",
     icon: RiBookReadFill,
   },
-  {
-    path: "/events",
-    label: "Eventos",
-    icon: RiCalendarEventFill,
-  },
-  {
-    path: "/notifications",
-    label: "Caixa de Entrada",
-    icon: RiArticleFill,
-  },
+  // {
+  //   path: "/events",
+  //   label: "Eventos",
+  //   icon: RiCalendarEventFill,
+  // },
+  // {
+  //   path: "/notifications",
+  //   label: "Caixa de Entrada",
+  //   icon: RiArticleFill,
+  // },
 ];

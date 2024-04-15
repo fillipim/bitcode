@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -75,4 +76,54 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../../public/fonts/Poppins-Light.ttf") format("ttf");
+  unicode-range: U+20, U+21, U+23, U+26-29, U+2C-33, U+35-38, U+3A, U+3F,
+    U+41-57, U+61-7A, U+A9, U+E9, U+2013, U+2014, U+2026, U+2AF6, U+1F44B;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../public/fonts/Poppins-Regular.ttf") format("ttf");
+  unicode-range: U+20, U+21, U+23, U+26-29, U+2C-33, U+35-38, U+3A, U+3F,
+    U+41-57, U+61-7A, U+A9, U+E9, U+2013, U+2014, U+2026, U+2AF6, U+1F44B;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../public/fonts/Poppins-SemiBold.ttf") format("ttf");
+  unicode-range: U+20, U+21, U+23, U+26-29, U+2C-33, U+35-38, U+3A, U+3F,
+    U+41-57, U+61-7A, U+A9, U+E9, U+2013, U+2014, U+2026, U+2AF6, U+1F44B;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../public/fonts/Poppins-Bold.ttf") format("ttf");
+  unicode-range: U+20, U+21, U+23, U+26-29, U+2C-33, U+35-38, U+3A, U+3F,
+    U+41-57, U+61-7A, U+A9, U+E9, U+2013, U+2014, U+2026, U+2AF6, U+1F44B;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../../public/fonts/Poppins-Black.ttf") format("ttf");
+  unicode-range: U+20, U+21, U+23, U+26-29, U+2C-33, U+35-38, U+3A, U+3F,
+    U+41-57, U+61-7A, U+A9, U+E9, U+2013, U+2014, U+2026, U+2AF6, U+1F44B;
 }

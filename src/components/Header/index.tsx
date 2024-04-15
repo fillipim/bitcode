@@ -4,29 +4,11 @@ import { style } from "./styles";
 import { menus } from "@/utils/menus";
 import Link from "../Link";
 import { usePathname } from "next/navigation";
-import { useCallback } from "react";
 import { IoMdPower } from "react-icons/io";
 
 const Header = () => {
   const pathname = usePathname();
   const { colorMode, toggleColorMode } = useColorMode();
-
-  const itemSchemeColor = useCallback(
-    (path: string) => {
-      localStorage.setItem("@theme", colorMode);
-      if (colorMode === "dark") {
-        return {
-          color: pathname === path ? "#28d9cc" : "#fff",
-          backgroundColor: pathname === path ? "#ffffff22" : "transparent",
-        };
-      }
-      return {
-        color: pathname === path ? "#28d9cc" : "#252525",
-        backgroundColor: pathname === path ? "#e4f8f7" : "transparent",
-      };
-    },
-    [colorMode, pathname]
-  );
 
   return (
     <Box sx={style.boxHeader}>
@@ -39,7 +21,9 @@ const Header = () => {
             key={menu.label}
             style={{
               ...style.menuItem,
-              ...itemSchemeColor(menu.path),
+              color: pathname === menu.path ? "#28d9cc" : "",
+              backgroundColor:
+                pathname === menu.path ? "#47c2aa20" : "transparent",
             }}
             href={menu.path}
           >
